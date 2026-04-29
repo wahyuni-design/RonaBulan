@@ -1,0 +1,45 @@
+<resources>
+    <!--  Primary Pink Palette  -->
+    <color name="pink_100">#FFF0F5</color>
+    <color name="pink_200">#FFD6E7</color>
+    <color name="pink_300">#FFB3D1</color>
+    <color name="pink_400">#FF8FBB</color>
+    <color name="pink_500">#FF6BA5</color>
+    <color name="pink_600">#E84D8A</color>
+    <color name="pink_700">#C73572</color>
+    <!--  Rose & Blush  -->
+    <color name="rose_light">#FFEEF4</color>
+    <color name="rose_medium">#F7C5D9</color>
+    <color name="blush">#FFAECB</color>
+    <color name="deep_rose">#D63F7A</color>
+    <!--  Lavender accent  -->
+    <color name="lavender_light">#F3E8FF</color>
+    <color name="lavender">#C9A7E8</color>
+    <!--  Neutrals  -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_soft">#FFF8FB</color>
+    <color name="gray_100">#FAF0F5</color>
+    <color name="gray_200">#F0E0EB</color>
+    <color name="gray_400">#C4A0B4</color>
+    <color name="gray_600">#8E6B80</color>
+    <color name="text_dark">#3D1A2E</color>
+    <color name="text_medium">#7A4060</color>
+    <color name="text_light">#B07090</color>
+    <!--  Status Colors  -->
+    <color name="period_red">#FF4D6D</color>
+    <color name="ovulation_purple">#B57BEB</color>
+    <color name="fertile_green">#6DCFB0</color>
+    <color name="safe_blue">#80C4E9</color>
+    <!--  Mood Colors  -->
+    <color name="mood_happy">#FFD93D</color>
+    <color name="mood_sad">#6EC6FF</color>
+    <color name="mood_angry">#FF6B6B</color>
+    <color name="mood_anxious">#B39DDB</color>
+    <color name="mood_calm">#80CBC4</color>
+    <color name="mood_romantic">#F48FB1</color>
+    <color name="mood_tired">#A5D6A7</color>
+    <color name="mood_energetic">#FFB74D</color>
+    <!--  Gradient-like solid for backgrounds  -->
+    <color name="gradient_start">#FFF0F5</color>
+    <color name="gradient_end">#FFE4EF</color>
+</resources>

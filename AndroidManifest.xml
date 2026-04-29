@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ronabulan.app">
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/Theme.RonaBulan">
+        <!--  ✅ SPLASH SCREEN — ini yang pertama dibuka (MAIN / LAUNCHER)  -->
+        <activity android:name=".SplashActivity" android:exported="true" android:theme="@style/Theme.RonaBulan.Splash" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!--  HOME / DASHBOARD  -->
+        <activity android:name=".HomeActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <!--  INPUT DATA HAID  -->
+        <activity android:name=".InputPeriodActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <!--  RIWAYAT  -->
+        <activity android:name=".HistoryActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <!--  DETAIL & PREDIKSI  -->
+        <activity android:name=".PredictionActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <!--  MOOD TRACKER  -->
+        <activity android:name=".MoodTrackerActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+    </application>
+</manifest>

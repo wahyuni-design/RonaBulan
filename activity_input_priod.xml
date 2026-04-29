@@ -1,0 +1,95 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/gradient_bg" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <!--  Header  -->
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="140dp" android:background="@drawable/bg_header_curved">
+            <ImageButton android:id="@+id/btn_back" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginStart="16dp" android:layout_marginTop="36dp" android:background="@drawable/bg_circle_pink_light" android:src="@android:drawable/ic_media_previous" android:contentDescription="Kembali"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:layout_centerInParent="true">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🩸" android:textSize="32sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Catat Haid" android:textColor="#FFFFFF" android:textSize="22sp" android:fontFamily="serif" android:textStyle="bold" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <!--  Form Cards  -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <!--  Date Range Card  -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:cardCornerRadius="20dp" app:cardElevation="4dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="16dp">
+                        <FrameLayout android:layout_width="32dp" android:layout_height="32dp" android:background="@drawable/bg_card_pink_gradient">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📅" android:textSize="16sp" android:layout_gravity="center"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tanggal Haid" android:textColor="@color/text_dark" android:textSize="16sp" android:fontFamily="sans-serif-medium" android:layout_marginStart="10dp"/>
+                    </LinearLayout>
+                    <!--  Start Date  -->
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tanggal Mulai" android:textColor="@color/text_light" android:textSize="12sp" android:layout_marginBottom="6dp"/>
+                    <LinearLayout android:id="@+id/layout_start_date" android:layout_width="match_parent" android:layout_height="52dp" android:background="@drawable/bg_flow_selector" android:orientation="horizontal" android:gravity="center_vertical" android:paddingStart="16dp" android:paddingEnd="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📆" android:textSize="18sp" android:layout_marginEnd="10dp"/>
+                        <TextView android:id="@+id/tv_start_date" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Pilih tanggal mulai" android:textColor="@color/text_light" android:textSize="14sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/pink_400" android:textSize="20sp"/>
+                    </LinearLayout>
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#FFF0F5" android:layout_marginTop="12dp" android:layout_marginBottom="12dp"/>
+                    <!--  End Date  -->
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tanggal Selesai" android:textColor="@color/text_light" android:textSize="12sp" android:layout_marginBottom="6dp"/>
+                    <LinearLayout android:id="@+id/layout_end_date" android:layout_width="match_parent" android:layout_height="52dp" android:background="@drawable/bg_flow_selector" android:orientation="horizontal" android:gravity="center_vertical" android:paddingStart="16dp" android:paddingEnd="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📆" android:textSize="18sp" android:layout_marginEnd="10dp"/>
+                        <TextView android:id="@+id/tv_end_date" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Pilih tanggal selesai" android:textColor="@color/text_light" android:textSize="14sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/pink_400" android:textSize="20sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--  Flow Intensity Card  -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:cardCornerRadius="20dp" app:cardElevation="4dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="16dp">
+                        <FrameLayout android:layout_width="32dp" android:layout_height="32dp" android:background="@drawable/bg_card_pink_gradient">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💧" android:textSize="16sp" android:layout_gravity="center"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Intensitas Aliran" android:textColor="@color/text_dark" android:textSize="16sp" android:fontFamily="sans-serif-medium" android:layout_marginStart="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center">
+                        <Button android:id="@+id/btn_flow_light" android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:layout_marginEnd="6dp" android:text="🌸 Ringan" android:textSize="13sp" android:background="@drawable/bg_flow_selector" android:textColor="@color/pink_600" android:stateListAnimator="@null"/>
+                        <Button android:id="@+id/btn_flow_normal" android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" android:text="💧 Normal" android:textSize="13sp" android:background="@drawable/bg_flow_selector" android:textColor="@color/pink_600" android:stateListAnimator="@null"/>
+                        <Button android:id="@+id/btn_flow_heavy" android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:layout_marginStart="6dp" android:text="🌊 Berat" android:textSize="13sp" android:background="@drawable/bg_flow_selector" android:textColor="@color/pink_600" android:stateListAnimator="@null"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--  Symptoms Card  -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:cardCornerRadius="20dp" app:cardElevation="4dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="16dp">
+                        <FrameLayout android:layout_width="32dp" android:layout_height="32dp" android:background="@drawable/bg_card_pink_gradient">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🩺" android:textSize="16sp" android:layout_gravity="center"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gejala yang Dirasakan" android:textColor="@color/text_dark" android:textSize="16sp" android:fontFamily="sans-serif-medium" android:layout_marginStart="10dp"/>
+                    </LinearLayout>
+                    <!--  Symptoms Chip Group (manual chips)  -->
+                    <com.google.android.material.chip.ChipGroup android:id="@+id/chip_group_symptoms" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.google.android.material.chip.Chip android:id="@+id/chip_cramps" style="@style/RonaBulan.Chip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="😣 Kram" android:checkable="true"/>
+                        <com.google.android.material.chip.Chip android:id="@+id/chip_bloating" style="@style/RonaBulan.Chip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🤰 Kembung" android:checkable="true"/>
+                        <com.google.android.material.chip.Chip android:id="@+id/chip_headache" style="@style/RonaBulan.Chip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🤕 Sakit Kepala" android:checkable="true"/>
+                        <com.google.android.material.chip.Chip android:id="@+id/chip_fatigue" style="@style/RonaBulan.Chip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="😴 Lelah" android:checkable="true"/>
+                        <com.google.android.material.chip.Chip android:id="@+id/chip_mood_swings" style="@style/RonaBulan.Chip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎭 Mood Swing" android:checkable="true"/>
+                        <com.google.android.material.chip.Chip android:id="@+id/chip_backpain" style="@style/RonaBulan.Chip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="😖 Sakit Pinggang" android:checkable="true"/>
+                        <com.google.android.material.chip.Chip android:id="@+id/chip_acne" style="@style/RonaBulan.Chip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="😮 Jerawat" android:checkable="true"/>
+                        <com.google.android.material.chip.Chip android:id="@+id/chip_nausea" style="@style/RonaBulan.Chip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🤢 Mual" android:checkable="true"/>
+                    </com.google.android.material.chip.ChipGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--  Notes Card  -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" app:cardCornerRadius="20dp" app:cardElevation="4dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="12dp">
+                        <FrameLayout android:layout_width="32dp" android:layout_height="32dp" android:background="@drawable/bg_card_pink_gradient">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📝" android:textSize="16sp" android:layout_gravity="center"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Catatan" android:textColor="@color/text_dark" android:textSize="16sp" android:fontFamily="sans-serif-medium" android:layout_marginStart="10dp"/>
+                    </LinearLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/RonaBulan.TextInputLayout">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@+id/et_notes" android:layout_width="match_parent" android:layout_height="100dp" android:hint="Tambahkan catatan pribadi..." android:textSize="14sp" android:textColor="@color/text_dark" android:gravity="top" android:inputType="textMultiLine" android:minLines="3"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--  Save Button  -->
+            <Button android:id="@+id/btn_save" android:layout_width="match_parent" android:layout_height="56dp" android:text="💾 Simpan Catatan" android:textColor="#FFFFFF" android:textSize="16sp" android:fontFamily="sans-serif-medium" android:background="@drawable/bg_button_pink" android:stateListAnimator="@null" android:layout_marginBottom="30dp" android:elevation="6dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

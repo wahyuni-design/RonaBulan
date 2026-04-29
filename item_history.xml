@@ -1,0 +1,21 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" app:cardCornerRadius="20dp" app:cardElevation="4dp" app:cardBackgroundColor="#FFFFFF">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="16dp" android:gravity="center_vertical">
+        <!--  Left: Date Badge  -->
+        <LinearLayout android:layout_width="64dp" android:layout_height="64dp" android:background="@drawable/bg_card_pink_gradient" android:orientation="vertical" android:gravity="center">
+            <TextView android:id="@+id/tv_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Apr" android:textColor="#FFDDF0" android:textSize="11sp" android:fontFamily="sans-serif-light"/>
+            <TextView android:id="@+id/tv_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14" android:textColor="#FFFFFF" android:textSize="24sp" android:fontFamily="sans-serif-bold" android:textStyle="bold"/>
+        </LinearLayout>
+        <View android:layout_width="1dp" android:layout_height="50dp" android:background="#FFD6E7" android:layout_marginStart="14dp" android:layout_marginEnd="14dp"/>
+        <!--  Center: Info  -->
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/tv_period_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14 Apr – 19 Apr 2026" android:textColor="@color/text_dark" android:textSize="14sp" android:fontFamily="sans-serif-medium"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="4dp">
+                <TextView android:id="@+id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5 hari" android:textColor="@color/pink_600" android:textSize="12sp" android:background="@drawable/bg_chip_selector" android:paddingStart="10dp" android:paddingEnd="10dp" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_marginEnd="6dp"/>
+                <TextView android:id="@+id/tv_flow_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💧 Normal" android:textColor="@color/text_medium" android:textSize="12sp" android:background="@drawable/bg_flow_selector" android:paddingStart="10dp" android:paddingEnd="10dp" android:paddingTop="3dp" android:paddingBottom="3dp"/>
+            </LinearLayout>
+            <TextView android:id="@+id/tv_symptoms_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kram, Lelah" android:textColor="@color/text_light" android:textSize="11sp" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+        <!--  Right: Arrow  -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/pink_300" android:textSize="24sp" android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

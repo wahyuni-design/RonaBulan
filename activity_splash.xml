@@ -1,0 +1,27 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/gradient_splash">
+    <!--  Decorative Circles Background  -->
+    <View android:id="@+id/circle_top_right" android:layout_width="200dp" android:layout_height="200dp" android:alpha="0.15" android:background="@drawable/bg_circle_pink_light" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="-60dp" android:layout_marginTop="-60dp"/>
+    <View android:id="@+id/circle_bottom_left" android:layout_width="160dp" android:layout_height="160dp" android:alpha="0.15" android:background="@drawable/bg_circle_pink_light" app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="-40dp" android:layout_marginBottom="-40dp"/>
+    <View android:id="@+id/circle_mid" android:layout_width="100dp" android:layout_height="100dp" android:alpha="0.1" android:background="@drawable/bg_circle_pink_light" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="60dp" android:layout_marginBottom="200dp"/>
+    <!--  Flower / Moon icon placeholder (emoji fallback)  -->
+    <LinearLayout android:id="@+id/logo_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="60dp">
+        <!--  Logo Circle  -->
+        <FrameLayout android:layout_width="120dp" android:layout_height="120dp" android:background="@drawable/bg_circle_pink_light" android:layout_gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🌸" android:textSize="64sp" android:layout_gravity="center"/>
+        </FrameLayout>
+        <View android:layout_width="60dp" android:layout_height="2dp" android:layout_marginTop="28dp" android:layout_marginBottom="16dp" android:background="#80FFFFFF" android:layout_gravity="center"/>
+        <!--  App Name  -->
+        <TextView android:id="@+id/tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RonaBulan" android:textSize="42sp" android:fontFamily="serif" android:textStyle="italic" android:textColor="#FFFFFF" android:letterSpacing="0.05" android:layout_gravity="center"/>
+        <!--  Tagline  -->
+        <TextView android:id="@+id/tv_tagline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Teman Setia Siklus Anda ✨" android:textSize="14sp" android:textColor="#FFDDF0" android:fontFamily="sans-serif-light" android:layout_marginTop="8dp" android:letterSpacing="0.08" android:layout_gravity="center"/>
+    </LinearLayout>
+    <!--  Floating petals (decorative TextViews)  -->
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🌺" android:textSize="28sp" android:alpha="0.7" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="30dp" android:layout_marginTop="120dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🌼" android:textSize="22sp" android:alpha="0.6" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="50dp" android:layout_marginTop="200dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💮" android:textSize="26sp" android:alpha="0.6" app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="60dp" android:layout_marginBottom="180dp"/>
+    <!--  Loading Indicator  -->
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="80dp">
+        <ProgressBar android:id="@+id/progress_bar" android:layout_width="40dp" android:layout_height="40dp" android:indeterminate="true" android:indeterminateTint="#FFFFFF" android:layout_marginBottom="12dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Memuat..." android:textColor="#FFDDF0" android:textSize="12sp" android:fontFamily="sans-serif-light" android:letterSpacing="0.1"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

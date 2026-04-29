@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">RonaBulan</string>
+    <string name="app_tagline">Teman Setia Siklus Anda</string>
+    <!--  Splash  -->
+    <string name="splash_subtitle">Pantau siklus, kenali tubuhmu</string>
+    <!--  Home  -->
+    <string name="home_greeting">Halo, Cantik! 🌸</string>
+    <string name="home_subtitle">Bagaimana kabarmu hari ini?</string>
+    <string name="cycle_day">Hari Siklus</string>
+    <string name="next_period">Prediksi Haid</string>
+    <string name="cycle_phase">Fase Siklus</string>
+    <string name="btn_input_period">Catat Haid</string>
+    <string name="btn_history">Riwayat</string>
+    <string name="btn_prediction">Prediksi</string>
+    <string name="btn_mood">Mood Hari Ini</string>
+    <string name="days_label">hari lagi</string>
+    <string name="phase_menstrual">Fase Menstruasi</string>
+    <string name="phase_follicular">Fase Folikuler</string>
+    <string name="phase_ovulation">Fase Ovulasi</string>
+    <string name="phase_luteal">Fase Luteal</string>
+    <!--  Input  -->
+    <string name="input_title">Catat Haid</string>
+    <string name="input_start_date">Tanggal Mulai</string>
+    <string name="input_end_date">Tanggal Selesai</string>
+    <string name="input_flow">Intensitas Aliran</string>
+    <string name="flow_light">Ringan</string>
+    <string name="flow_normal">Normal</string>
+    <string name="flow_heavy">Berat</string>
+    <string name="input_symptoms">Gejala</string>
+    <string name="input_notes">Catatan</string>
+    <string name="btn_save">Simpan Catatan</string>
+    <string name="input_hint_notes">Tambahkan catatan pribadi...</string>
+    <!--  History  -->
+    <string name="history_title">Riwayat Siklus</string>
+    <string name="history_empty">Belum ada riwayat\nMulai catat siklusmu 🌸</string>
+    <string name="history_cycle_length">Panjang Siklus</string>
+    <string name="history_period_duration">Durasi Haid</string>
+    <!--  Prediction  -->
+    <string name="prediction_title">Detail Prediksi</string>
+    <string name="next_period_label">Haid Berikutnya</string>
+    <string name="fertile_window">Masa Subur</string>
+    <string name="ovulation_day">Hari Ovulasi</string>
+    <string name="avg_cycle">Rata-rata Siklus</string>
+    <string name="cycle_insight">Insight Siklus</string>
+    <!--  Mood  -->
+    <string name="mood_title">Mood Tracker</string>
+    <string name="mood_subtitle">Bagaimana perasaanmu hari ini?</string>
+    <string name="mood_happy">Bahagia</string>
+    <string name="mood_sad">Sedih</string>
+    <string name="mood_angry">Marah</string>
+    <string name="mood_anxious">Cemas</string>
+    <string name="mood_calm">Tenang</string>
+    <string name="mood_romantic">Romantis</string>
+    <string name="mood_tired">Lelah</string>
+    <string name="mood_energetic">Bersemangat</string>
+    <string name="btn_save_mood">Simpan Mood</string>
+    <string name="mood_saved">Mood hari ini tersimpan! 💕</string>
+    <string name="energy_level">Level Energi</string>
+    <string name="mood_note">Catatan Perasaan</string>
+    <string name="mood_note_hint">Ceritakan perasaanmu...</string>
+</resources>
